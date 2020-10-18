@@ -114,10 +114,13 @@ if sex == 'male':
     elif percentage == 100.0:
         peopletaller = 99
         percentage = 99.9
+    elif 1 > percentage >= 0.0:
+        percentage = 1.0
+        peopletaller = 1
     else:
         peopletaller = round(percentage)
     peopleshorter = 100-peopletaller
-    print('You are taller than {:.2f}% of the female population in {}. YAY!'.format(percentage,country))
+    print('You are taller than {:.2f}% of the male population in {}. YAY!'.format(percentage,country))
     print('In {}, out of a 100 males, you are taller than {} of them, and you are shorter than {} of them.'.format(state,int(peopletaller),int(peopleshorter)))
     
     
@@ -166,10 +169,13 @@ if sex == 'male':
     elif percentage == 100.0:
         peopletaller = 99
         percentage = 99.9
+    elif 1 > percentage >= 0.0:
+        percentage = 1.0
+        peopletaller = 1
     else:
         peopletaller = round(percentage)
     peopleshorter = 100-peopletaller
-    print('You are taller than {:.2f}% of the female population in {}. YAY!'.format(percentage,country))
+    print('You are taller than {:.2f}% of the male population in {}. YAY!'.format(percentage,country))
     print('In {}, out of a 100 males, you are taller than {} of them, and you are shorter than {} of them.'.format(country,int(peopletaller),int(peopleshorter)))
     
     # a bar graph
@@ -220,6 +226,9 @@ if sex == 'female':
     elif percentage == 100.0:
         peopletaller = 99
         percentage = 99.9
+    elif 1 > percentage >= 0.0:
+        percentage = 1.0
+        peopletaller = 1
     else:
         peopletaller = round(percentage)
     peopleshorter = 100-peopletaller
@@ -272,6 +281,9 @@ if sex == 'female':
     elif percentage == 100.0:
         peopletaller = 99
         percentage = 99.9
+    elif 1 > percentage >= 0.0:
+        percentage = 1.0
+        peopletaller = 1
     else:
         peopletaller = round(percentage)
     peopleshorter = 100-peopletaller
